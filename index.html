@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<style>
+
+		body{display: flex; margin:auto;}
+		.wrap{display: flex;    
+			justify-content: center;  
+			gap: 20px; 
+			width: 50%;
+			margin: 0 auto;}
+
+			header{padding-top: 100px;}
+
+		.jojo1{background:url('jojo1.jpg'); background-size: cover; background-attachment: fixed;}
+		.jojo2{background:url('https://i.imgur.com/AMSTTSs.gif'); background-size: cover; background-attachment: fixed;}
+		.jojo3{background:url('https://i.imgur.com/Fsv9MsV.gif'); background-size: cover; background-attachment: fixed;}
+		.jojo4{background:url('https://i.imgur.com/KwcMXBs.gif'); background-size: cover; background-attachment: fixed;}
+		.jojo5{background:url('jojo5.jpg'); background-size: cover; background-attachment: fixed;}
+
+		.overdrive{background: url('jonathan_overdive.gif'); background-size: cover; background-attachment: absolute;}
+
+		.nigerunda{background: url('https://i.imgur.com/AMSTTSs.gif'); background-size: cover; background-attachment: absolute;}
+
+		.ora{background: url('https://i.imgur.com/Fsv9MsV.gif'); background-size: cover; background-attachment: absolute;}
+
+		.dora{background: url('https://i.imgur.com/KwcMXBs.gif'); background-size: cover; background-attachment: absolute;}
+
+		.gold{background: url('goldexperience.gif'); background-size: cover; background-attachment: absolute;}
+
+		.left-spacing{padding-left: 150px;}
+		.right-spacing{padding-right: 150px;}
+
+		.center-spacing { width: 30%; height: auto; display: block; }
+		.black{background: black}
+
+	</style>
+	<title></title>
+</head>
+<body class="black">
+	<header>
+		<div>
+			<h1 style="color:white; padding-left: 5px;">피의 운명과 맞서 싸워라!!</h1>
+			<h2 style="color:white; padding-left: 5px;">죠스타 혈통을 이어보세요.</h2>
+			<h4 style="color:white; padding-left: 5px;">되고 싶은 죠죠를 누르면 <br>전투력을 올려주는 ost가 재생됩니다. </h4>
+			<h4 style="color:white; padding-left: 5px;"> </h4>
+			
+			<img id= over class="center-spacing" src="jonathan_overdrive.gif" style="padding-left: 10px; opacity: 0; width: 400px; height: auto;position: absolute;">
+
+			<img id= nige class="center-spacing" src="joseph.gif" style="padding-left: 10px; opacity: 0; width: 400px; height: auto;position: absolute;" >
+
+			<img id= ora class="center-spacing" src="star.gif" style="padding-left: 10px; opacity: 0; width: 400px; height: auto;position: absolute;" >
+
+			<img id= dora class="center-spacing" src="crazydiamond.gif" style="padding-left: 10px; opacity: 0; width: 400px; height: auto;position: absolute;" >
+
+			<img id= gold class="center-spacing" src="goldexperience.gif" style="padding-left: 10px; opacity: 0; width: 400px; height: auto;position: absolute;" >
+
+		</div>
+	</header>
+
+
+	<div class="wrap" style="padding-top: 50px;">
+
+	<audio id=jo1 src="JonathanOST.mp3"></audio>
+	<audio id=jo2 src="JosephOST.mp3"></audio>
+	<audio id=jo3 src="JotaroOST.mp3"></audio>
+	<audio id=jo4 src="JosukeOST.mp3"></audio>
+	<audio id=giorno src="GiornoOST.mp3"></audio>
+
+	<img id= jo1But class="center-spacing" src="jojo1.jpg" style=" width: 25%; height: auto;">
+	<img id= jo2But class="center-spacing" src="jojo2.jpg" style=" width: 25%; height: auto;">
+	<img id= jo3But class="center-spacing" src="jojo3.jpg" style=" width: 25%; height: auto;">
+	<img id= jo4But class="center-spacing" src="jojo4.jpg" style=" width: 25%; height: auto;">
+	<img id= giornoBut class="center-spacing" src="jojo5.jpg" style=" width: 25%; height: auto;">
+
+
+
+	<script>
+
+
+
+
+		let JOJO1 = false;
+
+		jo1But.onclick = function(){
+
+		if(!JOJO1){
+
+		jo1.play();
+
+		jo1But.style.filter = "invert(100%)";
+
+		over.style.opacity="1";
+
+		JOJO1 = true;
+
+		}else{
+
+		jo1.pause();
+
+		jo1But.style.filter = "invert(0%)";
+
+		over.style.opacity="0";
+
+		JOJO1 = false;
+
+		}
+
+		}
+
+ 
+
+		let JOJO2 = false;
+
+		jo2But.onclick = function(){
+
+		if(!JOJO2){
+
+		jo2.play();
+
+		jo2But.style.filter = "invert(100%)";
+
+		nige.style.opacity="1";
+
+		JOJO2 = true;
+
+		}else{
+
+		jo2.pause();
+
+		jo2But.style.filter = "invert(0%)";
+
+		nige.style.opacity="0";
+
+		JOJO2 = false;
+
+		}
+
+		}
+
+		let JOJO3 = false;
+
+		jo3But.onclick = function(){
+
+		if(!JOJO3){
+
+		jo3.play();
+
+		jo3But.style.filter = "invert(100%)";
+
+		ora.style.opacity="1";
+
+		JOJO3 = true;
+
+		}else{
+
+		jo3.pause();
+
+		jo3But.style.filter = "invert(0%)";
+
+		ora.style.opacity="0";
+
+		JOJO3 = false;
+
+		}
+
+		}
+
+		let JOJO4 = false;
+
+		jo4But.onclick = function(){
+
+		if(!JOJO4){
+
+		jo4.play();
+
+		jo4But.style.filter = "invert(100%)";
+
+		dora.style.opacity="1";
+
+		JOJO4 = true;
+
+
+		}else{
+
+		jo4.pause();
+
+		jo4But.style.filter = "invert(0%)";
+		dora.style.opacity="0";
+
+		JOJO4 = false;
+
+		}
+
+		}
+
+		let JOJO5 = false;
+
+		giornoBut.onclick = function(){
+
+		if(!JOJO5){
+
+		giorno.play();
+
+		giornoBut.style.filter = "invert(100%)";
+
+		gold.style.opacity="1";
+
+		JOJO5 = true;
+
+		}else{
+
+		giorno.pause();
+
+		giornoBut.style.filter = "invert(0%)";
+
+		gold.style.opacity="0";
+
+		JOJO5 = false;
+
+		}
+
+		}
+
+	</script>
+
+	</div>
+
+
+</body>
+</html>
